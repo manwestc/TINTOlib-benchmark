@@ -18,7 +18,6 @@ This repository contains the resources and code for the study: **"Improving the 
 - **Metrics**: Performance evaluation using RMSE, Accuracy, Precision, Recall, and F1-score.
 
 ## Methodology
-TODO:
 
 ### Datasets
 The experiments span a variety of datasets, including:
@@ -26,7 +25,9 @@ The experiments span a variety of datasets, including:
 - **Binary Classification**: Dengue/Chikungunya, HELOC
 - **Multiclass Classification**: Covertype, GAS
 
-Put dataset links...
+To download MIMO Dataset: https://ieee-dataport.org/open-access/ultra-dense-indoor-mamimo-csi-dataset
+
+And use convert_csi_to_csv_by_antennas.py
 
 ## Installation
 Clone the repository and install the dependencies:

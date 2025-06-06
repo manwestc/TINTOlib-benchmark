@@ -1,0 +1,10 @@
+TINTOlib==0.0.26
+einops==0.8.0
+pandas==2.2.3
+scikit-learn==1.6.0
+matplotlib==3.10.0
+opencv-python==4.10.0
+torchmetrics==1.6.1
+torch-lr-finder==0.2.2
+bitstring==4.3.0
+numpy==2.2.1
