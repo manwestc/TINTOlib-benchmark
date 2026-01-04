@@ -1,5 +1,9 @@
 # Improving the Use of Deep Neural Networks with Tabular Data by Exploiting Synthetic Images
 
+## Video
+
+https://github.com/user-attachments/assets/8b167075-2010-4072-a5ff-dea6fc117437
+
 ## Overview
 This repository contains the resources and code for the study: **"Improving the Use of Deep Neural Networks with Tabular Data by Exploiting Synthetic Images."** It benchmarks eight tabular-to-image transformation techniques and evaluates their effectiveness in combination with hybrid architectures (CNN+MLP and ViT+MLP) across diverse datasets and machine learning tasks.
 
