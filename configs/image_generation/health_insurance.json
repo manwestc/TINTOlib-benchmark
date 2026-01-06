@@ -1,0 +1,63 @@
+{
+  "dataset_name": "health_insurance",
+  "parameters": {
+    "TINTO_blur": {
+      "method": "TINTO",
+      "problem": "regression",
+      "normalize": false,
+      "blur": true,
+      "option": "maximum",
+      "pixels": 20,
+      "save_path": "SyntheticImages/Regression/health_insurance/TINTO_blur"
+    },
+    "IGTD": {
+      "problem": "regression",
+      "normalize": false,
+      "fea_dist_method": "Euclidean",
+      "image_dist_method": "Euclidean",
+      "error": "abs",
+      "max_step": 30000,
+      "val_step": 500,
+      "save_path": "SyntheticImages/Regression/health_insurance/IGTD"
+    },
+    "REFINED": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/health_insurance/REFINED"
+    },
+    "BarGraph": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/health_insurance/BarGraph"
+    },
+    "DistanceMatrix": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/health_insurance/DistanceMatrix"
+    },
+    "Combination": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/health_insurance/Combination"
+    },
+    "SuperTML": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/health_insurance/SuperTML",
+      "font_size": 10
+    },
+    "FeatureWrap": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/health_insurance/FeatureWrap",
+      "size": [6,6]
+    },
+    "BIE": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/health_insurance/BIE",
+      "precision": 64
+    }
+  }
+}
+

@@ -1,0 +1,73 @@
+📊 Dataset: Regression/california_housing/california_housing
+
+Shape: (20640, 9)
+
+
+Columns:
+['longitude', 'latitude', 'housingMedianAge', 'totalRooms', 'totalBedrooms', 'population', 'households', 'medianIncome', 'medianHouseValue']
+
+
+First 5 rows:
+   longitude  latitude  housingMedianAge  totalRooms  totalBedrooms  \
+0    -122.23     37.88                41       880.0          129.0   
+1    -122.22     37.86                21      7099.0         1106.0   
+2    -122.24     37.85                52      1467.0          190.0   
+3    -122.25     37.85                52      1274.0          235.0   
+4    -122.25     37.85                52      1627.0          280.0   
+
+   population  households  medianIncome  medianHouseValue  
+0       322.0       126.0        8.3252          452600.0  
+1      2401.0      1138.0        8.3014          358500.0  
+2       496.0       177.0        7.2574          352100.0  
+3       558.0       219.0        5.6431          341300.0  
+4       565.0       259.0        3.8462          342200.0  
+
+
+Missing values per column:
+longitude           0
+latitude            0
+housingMedianAge    0
+totalRooms          0
+totalBedrooms       0
+population          0
+households          0
+medianIncome        0
+medianHouseValue    0
+dtype: int64
+
+
+Categorical columns:
+[]
+
+
+Numerical columns:
+['longitude', 'latitude', 'housingMedianAge', 'totalRooms', 'totalBedrooms', 'population', 'households', 'medianIncome']
+
+
+✅ Assuming label column: 'medianHouseValue'
+
+
+Class distribution (if classification):
+medianHouseValue
+500001.0    965
+137500.0    122
+162500.0    117
+112500.0    103
+187500.0     93
+           ... 
+352500.0      1
+465000.0      1
+457500.0      1
+261200.0      1
+307900.0      1
+Name: count, Length: 3842, dtype: int64
+
+
+🔎 Missing Value Summary:
+- Missing values in categorical features: 0
+- Missing values in numerical features: 0
+- Total missing values: 0
+- Overall missing rate: 0.00%
+
+
+🛠 Imputation Suggestions:

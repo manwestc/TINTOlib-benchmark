@@ -1,0 +1,23 @@
+{
+    "LogisticRegression": {
+        "model": {
+            "C": [
+                "loguniform",
+                1e-05,
+                5
+            ],
+            "penalty": [
+                "categorical",
+                [
+                    "l2"
+                ]
+            ],
+            "max_iter": [
+                "int",
+                50,
+                5000
+            ]
+        },
+        "fit": {}
+    }
+}

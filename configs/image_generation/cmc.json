@@ -1,0 +1,61 @@
+{
+  "dataset_name": "cmc",
+  "parameters": {
+    "TINTO_blur": {
+      "method": "TINTO",
+      "problem": "supervised",
+      "normalize": false,
+      "blur": true,
+      "option": "maximum",
+      "pixels": 20,
+      "save_path": "SyntheticImages/Multiclass/cmc/TINTO_blur"
+    },
+    "IGTD": {
+      "problem": "supervised",
+      "normalize": false,
+      "fea_dist_method": "Euclidean",
+      "image_dist_method": "Euclidean",
+      "error": "abs",
+      "max_step": 30000,
+      "val_step": 500,
+      "save_path": "SyntheticImages/Multiclass/cmc/IGTD"
+    },"REFINED": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Multiclass/cmc/REFINED"
+    },
+    "BarGraph": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Multiclass/cmc/BarGraph"
+    },
+    "DistanceMatrix": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Multiclass/cmc/DistanceMatrix"
+    },
+    "Combination": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Multiclass/cmc/Combination"
+    },
+    "SuperTML": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Multiclass/cmc/SuperTML",
+      "font_size": 15
+    },
+    "FeatureWrap": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Multiclass/cmc/FeatureWrap",
+      "size": [6,6]
+    },
+    "BIE": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Multiclass/cmc/BIE",
+      "precision": 64
+    }
+  }
+}

@@ -1,0 +1,80 @@
+📊 Dataset: Regression/boston/boston
+
+Shape: (506, 14)
+
+
+Columns:
+['CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX', 'PTRATIO', 'B', 'LSTAT', 'MEDV']
+
+
+First 5 rows:
+      CRIM    ZN  INDUS  CHAS    NOX     RM   AGE     DIS  RAD    TAX  \
+0  0.00632  18.0   2.31     0  0.538  6.575  65.2  4.0900    1  296.0   
+1  0.02731   0.0   7.07     0  0.469  6.421  78.9  4.9671    2  242.0   
+2  0.02729   0.0   7.07     0  0.469  7.185  61.1  4.9671    2  242.0   
+3  0.03237   0.0   2.18     0  0.458  6.998  45.8  6.0622    3  222.0   
+4  0.06905   0.0   2.18     0  0.458  7.147  54.2  6.0622    3  222.0   
+
+   PTRATIO       B  LSTAT  MEDV  
+0     15.3  396.90   4.98  24.0  
+1     17.8  396.90   9.14  21.6  
+2     17.8  392.83   4.03  34.7  
+3     18.7  394.63   2.94  33.4  
+4     18.7  396.90   5.33  36.2  
+
+
+Missing values per column:
+CRIM       0
+ZN         0
+INDUS      0
+CHAS       0
+NOX        0
+RM         0
+AGE        0
+DIS        0
+RAD        0
+TAX        0
+PTRATIO    0
+B          0
+LSTAT      0
+MEDV       0
+dtype: int64
+
+
+Categorical columns:
+['CHAS', 'RAD']
+
+
+Numerical columns:
+['CRIM', 'ZN', 'INDUS', 'NOX', 'RM', 'AGE', 'DIS', 'TAX', 'PTRATIO', 'B', 'LSTAT']
+
+
+✅ Assuming label column: 'MEDV'
+
+
+Class distribution (if classification):
+MEDV
+50.0    16
+25.0     8
+23.1     7
+22.0     7
+21.7     7
+        ..
+12.6     1
+16.4     1
+17.7     1
+12.0     1
+8.1      1
+Name: count, Length: 229, dtype: int64
+
+
+🔎 Missing Value Summary:
+- Missing values in categorical features: 0
+- Missing values in numerical features: 0
+- Total missing values: 0
+- Overall missing rate: 0.00%
+
+⚡ Info: Dataset has categorical features!
+
+
+🛠 Imputation Suggestions:

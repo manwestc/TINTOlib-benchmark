@@ -1,0 +1,11 @@
+{
+  "categorical_cols": ["hhi", "whi", "hhi2", "education", "race", "hispanic", "region"],
+  "numerical_cols": ["experience", "kidslt6", "kids618", "husby"],
+  "encoding": {
+    "categorical_features": "onehot",
+    "numerical_features": "minmax",
+    "target": "whrswk"
+  },
+  "batch_size": 128,
+  "epochs": 100
+}

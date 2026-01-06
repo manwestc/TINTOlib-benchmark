@@ -1,0 +1,83 @@
+📊 Dataset: Binary/credit-approval/credit-approval
+
+Shape: (690, 16)
+
+
+Columns:
+['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9', 'A10', 'A11', 'A12', 'A13', 'A14', 'A15', 'class']
+
+
+First 5 rows:
+  A1     A2     A3 A4 A5 A6 A7    A8 A9 A10  A11 A12 A13    A14    A15 class
+0  b  30.83  0.000  u  g  w  v  1.25  t   t  1.0   f   g  202.0    0.0     +
+1  a  58.67  4.460  u  g  q  h  3.04  t   t  6.0   f   g   43.0  560.0     +
+2  a  24.50  0.500  u  g  q  h  1.50  t   f  0.0   f   g  280.0  824.0     +
+3  b  27.83  1.540  u  g  w  v  3.75  t   t  5.0   t   g  100.0    3.0     +
+4  b  20.17  5.625  u  g  w  v  1.71  t   f  0.0   f   s  120.0    0.0     +
+
+
+Missing values per column:
+A1       12
+A2       12
+A3        0
+A4        6
+A5        6
+A6        9
+A7        9
+A8        0
+A9        0
+A10       0
+A11       0
+A12       0
+A13       0
+A14      13
+A15       0
+class     0
+dtype: int64
+
+
+Categorical columns:
+['A1', 'A4', 'A5', 'A6', 'A7', 'A9', 'A10', 'A12', 'A13']
+
+
+Numerical columns:
+['A2', 'A3', 'A8', 'A11', 'A14', 'A15']
+
+
+✅ Assuming label column: 'class'
+
+
+Class distribution (if classification):
+class
+-    383
++    307
+Name: count, dtype: int64
+
+
+⚖️ Balance Check:
+- Number of classes: 2
+- Majority class count: 383
+- Minority class count: 307
+- Imbalance ratio (majority/minority): 1.25
+✅ Class distribution looks balanced.
+
+
+🔎 Missing Value Summary:
+- Missing values in categorical features: 42
+- Missing values in numerical features: 25
+- Total missing values: 67
+- Overall missing rate: 0.61%
+
+⚠️ Warning: Dataset has missing values!
+
+⚡ Info: Dataset has categorical features!
+
+
+🛠 Imputation Suggestions:
+- Feature 'A2': median imputation (skewed/long tail) (skewness = 1.15)
+- Feature 'A14': median imputation (skewed/long tail) (skewness = 2.72)
+- Feature 'A1': add a new category for missing values (e.g., 'Missing')
+- Feature 'A4': add a new category for missing values (e.g., 'Missing')
+- Feature 'A5': add a new category for missing values (e.g., 'Missing')
+- Feature 'A6': add a new category for missing values (e.g., 'Missing')
+- Feature 'A7': add a new category for missing values (e.g., 'Missing')

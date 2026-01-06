@@ -1,0 +1,63 @@
+{
+  "dataset_name": "superconductivity",
+  "parameters": {
+    "TINTO_blur": {
+      "method": "TINTO",
+      "problem": "regression",
+      "normalize": false,
+      "blur": true,
+      "option": "maximum",
+      "pixels": 20,
+      "save_path": "SyntheticImages/Regression/superconductivity/TINTO_blur"
+    },
+    "IGTD": {
+      "problem": "regression",
+      "normalize": false,
+      "fea_dist_method": "Euclidean",
+      "image_dist_method": "Euclidean",
+      "error": "abs",
+      "max_step": 30000,
+      "val_step": 500,
+      "save_path": "SyntheticImages/Regression/superconductivity/IGTD"
+    },
+    "REFINED": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/superconductivity/REFINED"
+    },
+    "BarGraph": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/superconductivity/BarGraph"
+    },
+    "DistanceMatrix": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/superconductivity/DistanceMatrix"
+    },
+    "Combination": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/superconductivity/Combination"
+    },
+    "SuperTML": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/superconductivity/SuperTML",
+      "font_size": 7
+    },
+    "FeatureWrap": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/superconductivity/FeatureWrap",
+      "size": [12,12]
+    },
+    "BIE": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/superconductivity/BIE",
+      "precision": 64
+    }
+  }
+}
+

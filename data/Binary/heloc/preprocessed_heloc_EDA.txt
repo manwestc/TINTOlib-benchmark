@@ -1,0 +1,131 @@
+📊 Dataset: Binary/heloc/preprocessed_heloc
+
+Shape: (9871, 24)
+
+
+Columns:
+['ExternalRiskEstimate', 'MSinceOldestTradeOpen', 'MSinceMostRecentTradeOpen', 'AverageMInFile', 'NumSatisfactoryTrades', 'NumTrades60Ever2DerogPubRec', 'NumTrades90Ever2DerogPubRec', 'PercentTradesNeverDelq', 'MSinceMostRecentDelq', 'MaxDelq2PublicRecLast12M', 'MaxDelqEver', 'NumTotalTrades', 'NumTradesOpeninLast12M', 'PercentInstallTrades', 'MSinceMostRecentInqexcl7days', 'NumInqLast6M', 'NumInqLast6Mexcl7days', 'NetFractionRevolvingBurden', 'NetFractionInstallBurden', 'NumRevolvingTradesWBalance', 'NumInstallTradesWBalance', 'NumBank2NatlTradesWHighUtilization', 'PercentTradesWBalance', 'RiskPerformance']
+
+
+First 5 rows:
+   ExternalRiskEstimate  MSinceOldestTradeOpen  MSinceMostRecentTradeOpen  \
+0                    55                    144                          4   
+1                    61                     58                         15   
+2                    67                     66                          5   
+3                    66                    169                          1   
+4                    81                    333                         27   
+
+   AverageMInFile  NumSatisfactoryTrades  NumTrades60Ever2DerogPubRec  \
+0              84                     20                            3   
+1              41                      2                            4   
+2              24                      9                            0   
+3              73                     28                            1   
+4             132                     12                            0   
+
+   NumTrades90Ever2DerogPubRec  PercentTradesNeverDelq  MSinceMostRecentDelq  \
+0                            0                      83                     2   
+1                            4                     100                    -7   
+2                            0                     100                    -7   
+3                            1                      93                    76   
+4                            0                     100                    -7   
+
+   MaxDelq2PublicRecLast12M  ...  MSinceMostRecentInqexcl7days  NumInqLast6M  \
+0                         3  ...                             0             0   
+1                         0  ...                             0             0   
+2                         7  ...                             0             4   
+3                         6  ...                             0             5   
+4                         7  ...                             0             1   
+
+   NumInqLast6Mexcl7days  NetFractionRevolvingBurden  \
+0                      0                          33   
+1                      0                           0   
+2                      4                          53   
+3                      4                          72   
+4                      1                          51   
+
+   NetFractionInstallBurden  NumRevolvingTradesWBalance  \
+0                        -8                           8   
+1                        -8                           0   
+2                        66                           4   
+3                        83                           6   
+4                        89                           3   
+
+   NumInstallTradesWBalance  NumBank2NatlTradesWHighUtilization  \
+0                         1                                   1   
+1                        -8                                  -8   
+2                         2                                   1   
+3                         4                                   3   
+4                         1                                   0   
+
+   PercentTradesWBalance  RiskPerformance  
+0                     69              Bad  
+1                      0              Bad  
+2                     86              Bad  
+3                     91              Bad  
+4                     80              Bad  
+
+[5 rows x 24 columns]
+
+
+Missing values per column:
+ExternalRiskEstimate                  0
+MSinceOldestTradeOpen                 0
+MSinceMostRecentTradeOpen             0
+AverageMInFile                        0
+NumSatisfactoryTrades                 0
+NumTrades60Ever2DerogPubRec           0
+NumTrades90Ever2DerogPubRec           0
+PercentTradesNeverDelq                0
+MSinceMostRecentDelq                  0
+MaxDelq2PublicRecLast12M              0
+MaxDelqEver                           0
+NumTotalTrades                        0
+NumTradesOpeninLast12M                0
+PercentInstallTrades                  0
+MSinceMostRecentInqexcl7days          0
+NumInqLast6M                          0
+NumInqLast6Mexcl7days                 0
+NetFractionRevolvingBurden            0
+NetFractionInstallBurden              0
+NumRevolvingTradesWBalance            0
+NumInstallTradesWBalance              0
+NumBank2NatlTradesWHighUtilization    0
+PercentTradesWBalance                 0
+RiskPerformance                       0
+dtype: int64
+
+
+Categorical columns:
+[]
+
+
+Numerical columns:
+['ExternalRiskEstimate', 'MSinceOldestTradeOpen', 'MSinceMostRecentTradeOpen', 'AverageMInFile', 'NumSatisfactoryTrades', 'NumTrades60Ever2DerogPubRec', 'NumTrades90Ever2DerogPubRec', 'PercentTradesNeverDelq', 'MSinceMostRecentDelq', 'MaxDelq2PublicRecLast12M', 'MaxDelqEver', 'NumTotalTrades', 'NumTradesOpeninLast12M', 'PercentInstallTrades', 'MSinceMostRecentInqexcl7days', 'NumInqLast6M', 'NumInqLast6Mexcl7days', 'NetFractionRevolvingBurden', 'NetFractionInstallBurden', 'NumRevolvingTradesWBalance', 'NumInstallTradesWBalance', 'NumBank2NatlTradesWHighUtilization', 'PercentTradesWBalance']
+
+
+✅ Assuming label column: 'RiskPerformance'
+
+
+Class distribution (if classification):
+RiskPerformance
+Bad     5136
+Good    4735
+Name: count, dtype: int64
+
+
+⚖️ Balance Check:
+- Number of classes: 2
+- Majority class count: 5136
+- Minority class count: 4735
+- Imbalance ratio (majority/minority): 1.08
+✅ Class distribution looks balanced.
+
+
+🔎 Missing Value Summary:
+- Missing values in categorical features: 0
+- Missing values in numerical features: 0
+- Total missing values: 0
+- Overall missing rate: 0.00%
+
+
+🛠 Imputation Suggestions:

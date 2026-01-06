@@ -1,0 +1,34 @@
+{
+  "mlp": {
+    "model": {
+      "mlp_hidden_dims": [
+        "categorical",
+        [
+          "[32]",
+          "[64]",
+          "[128]",
+          "[256]",
+          "[512]",
+          "[64, 64]",
+          "[128, 128]",
+          "[256, 256]",
+          "[512, 512]",
+          "[128, 64]",
+          "[256, 128]",
+          "[512, 256]",
+          "[256, 128, 64]",
+          "[512, 256, 128]"
+        ]
+      ],
+      "activation": ["categorical", ["relu"]],
+      "dropout": ["uniform", 0.0, 0.5]
+    },
+    "fit": {
+      "max_lr": ["loguniform", 1e-5, 1e-2],
+      "div_factor": ["int", 10, 1000],
+      "final_div_factor": ["int", 100, 1000],
+      "weight_decay": ["loguniform", 1e-6, 1e-2],
+      "pct_start": ["uniform", 0.10, 0.40]
+    }
+  }
+}

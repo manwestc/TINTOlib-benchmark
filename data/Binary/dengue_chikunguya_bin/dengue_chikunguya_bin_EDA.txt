@@ -1,0 +1,101 @@
+📊 Dataset: Binary/dengue_chikunguya_bin/dengue_chikunguya_bin
+
+Shape: (11448, 27)
+
+
+Columns:
+['NU_IDADE_N', 'CS_SEXO', 'CS_GESTANT', 'CS_RACA', 'CS_ZONA', 'FEBRE', 'MIALGIA', 'CEFALEIA', 'EXANTEMA', 'VOMITO', 'NAUSEA', 'DOR_COSTAS', 'CONJUNTVIT', 'ARTRITE', 'ARTRALGIA', 'PETEQUIA_N', 'LACO', 'DOR_RETRO', 'DIABETES', 'HEMATOLOG', 'HEPATOPAT', 'RENAL', 'HIPERTENSA', 'ACIDO_PEPT', 'AUTO_IMUNE', 'DIAS', 'CLASSI_FIN']
+
+
+First 5 rows:
+   NU_IDADE_N  CS_SEXO  CS_GESTANT  CS_RACA  CS_ZONA  FEBRE  MIALGIA  \
+0      4022.0        0         5.0      1.0      3.0    1.0      1.0   
+1      4020.0        1         6.0      4.0      1.0    1.0      1.0   
+2      4061.0        0         6.0      4.0      1.0    1.0      1.0   
+3      4046.0        1         6.0      4.0      1.0    1.0      1.0   
+4      4014.0        1         6.0      4.0      1.0    1.0      1.0   
+
+   CEFALEIA  EXANTEMA  VOMITO  ...  DOR_RETRO  DIABETES  HEMATOLOG  HEPATOPAT  \
+0       1.0       2.0     2.0  ...        1.0       2.0        2.0        2.0   
+1       1.0       2.0     2.0  ...        2.0       2.0        2.0        2.0   
+2       1.0       2.0     2.0  ...        2.0       2.0        2.0        2.0   
+3       1.0       2.0     2.0  ...        2.0       2.0        2.0        2.0   
+4       1.0       2.0     1.0  ...        1.0       2.0        2.0        2.0   
+
+   RENAL  HIPERTENSA  ACIDO_PEPT  AUTO_IMUNE  DIAS   CLASSI_FIN  
+0    2.0         2.0         2.0         2.0     1  CHIKUNGUNYA  
+1    2.0         2.0         2.0         2.0     6  CHIKUNGUNYA  
+2    2.0         2.0         2.0         2.0    32  CHIKUNGUNYA  
+3    2.0         2.0         2.0         2.0     2  CHIKUNGUNYA  
+4    2.0         2.0         2.0         2.0     2  CHIKUNGUNYA  
+
+[5 rows x 27 columns]
+
+
+Missing values per column:
+NU_IDADE_N    0
+CS_SEXO       0
+CS_GESTANT    0
+CS_RACA       0
+CS_ZONA       0
+FEBRE         0
+MIALGIA       0
+CEFALEIA      0
+EXANTEMA      0
+VOMITO        0
+NAUSEA        0
+DOR_COSTAS    0
+CONJUNTVIT    0
+ARTRITE       0
+ARTRALGIA     0
+PETEQUIA_N    0
+LACO          0
+DOR_RETRO     0
+DIABETES      0
+HEMATOLOG     0
+HEPATOPAT     0
+RENAL         0
+HIPERTENSA    0
+ACIDO_PEPT    0
+AUTO_IMUNE    0
+DIAS          0
+CLASSI_FIN    0
+dtype: int64
+
+
+Categorical columns:
+['CS_SEXO', 'CS_GESTANT', 'CS_RACA', 'CS_ZONA', 'FEBRE', 'MIALGIA', 'CEFALEIA', 'EXANTEMA', 'VOMITO', 'NAUSEA', 'DOR_COSTAS', 'CONJUNTVIT', 'ARTRITE', 'ARTRALGIA', 'PETEQUIA_N', 'LACO', 'DOR_RETRO', 'DIABETES', 'HEMATOLOG', 'HEPATOPAT', 'RENAL', 'HIPERTENSA', 'ACIDO_PEPT', 'AUTO_IMUNE']
+
+
+Numerical columns:
+['NU_IDADE_N', 'DIAS']
+
+
+✅ Assuming label column: 'CLASSI_FIN'
+
+
+Class distribution (if classification):
+CLASSI_FIN
+CHIKUNGUNYA    5724
+DENGUE         5724
+Name: count, dtype: int64
+
+
+⚖️ Balance Check:
+- Number of classes: 2
+- Majority class count: 5724
+- Minority class count: 5724
+- Imbalance ratio (majority/minority): 1.00
+✅ Class distribution looks balanced.
+
+
+🔎 Missing Value Summary:
+- Missing values in categorical features: 0
+- Missing values in numerical features: 0
+- Total missing values: 0
+- Overall missing rate: 0.00%
+
+⚡ Info: Dataset has categorical features!
+
+
+🛠 Imputation Suggestions:

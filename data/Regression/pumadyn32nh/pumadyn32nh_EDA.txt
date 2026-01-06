@@ -1,0 +1,106 @@
+📊 Dataset: Regression/pumadyn32nh/pumadyn32nh
+
+Shape: (8192, 33)
+
+
+Columns:
+['theta1', 'theta2', 'theta3', 'theta4', 'theta5', 'theta6', 'thetad1', 'thetad2', 'thetad3', 'thetad4', 'thetad5', 'thetad6', 'tau1', 'tau2', 'tau3', 'tau4', 'tau5', 'dm1', 'dm2', 'dm3', 'dm4', 'dm5', 'da1', 'da2', 'da3', 'da4', 'da5', 'db1', 'db2', 'db3', 'db4', 'db5', 'thetadd6']
+
+
+First 5 rows:
+     theta1    theta2    theta3    theta4    theta5    theta6   thetad1  \
+0 -1.740181 -2.130621  0.103368 -1.567134 -1.285315 -0.691332  1.527924   
+1  0.766791 -0.922281 -1.723316 -1.426237  1.158277  0.280458  1.277029   
+2 -0.663707 -0.692037 -0.883373  1.885469 -1.732785 -0.356147 -1.036066   
+3 -1.354211  0.608996  0.089989 -0.226215  0.901173  0.390096  1.403495   
+4 -1.878944 -1.697804 -1.474712  1.688963 -1.027354 -0.540314 -0.283221   
+
+    thetad2   thetad3   thetad4  ...       da2       da3       da4       da5  \
+0  2.016169 -1.029527  0.637638  ...  1.255209  1.790589  2.185923  2.301153   
+1 -1.903870 -1.214811  1.452689  ...  1.827918  1.824472  2.402558  0.542805   
+2 -0.876549 -1.224004 -2.256777  ...  1.939549  1.501275  1.932641  2.403204   
+3 -1.686645  2.292319 -1.492758  ...  0.614590  1.157946  0.603624  1.353953   
+4 -0.581209  0.406881  0.772200  ...  1.311253  0.973416  1.953356  1.802441   
+
+        db1       db2       db3       db4       db5  thetadd6  
+0  1.728633  0.392165  2.366764  1.956962  1.653879 -0.001470  
+1  0.676550  0.779977  2.080316  0.373353  1.199206  0.033312  
+2  2.392319  1.703999  0.370313  1.844586  0.707740 -0.034916  
+3  0.886288  2.344122  1.656696  1.846551  2.232402  0.013535  
+4  1.124414  1.779722  1.786625  0.809329  0.390752 -0.016772  
+
+[5 rows x 33 columns]
+
+
+Missing values per column:
+theta1      0
+theta2      0
+theta3      0
+theta4      0
+theta5      0
+theta6      0
+thetad1     0
+thetad2     0
+thetad3     0
+thetad4     0
+thetad5     0
+thetad6     0
+tau1        0
+tau2        0
+tau3        0
+tau4        0
+tau5        0
+dm1         0
+dm2         0
+dm3         0
+dm4         0
+dm5         0
+da1         0
+da2         0
+da3         0
+da4         0
+da5         0
+db1         0
+db2         0
+db3         0
+db4         0
+db5         0
+thetadd6    0
+dtype: int64
+
+
+Categorical columns:
+[]
+
+
+Numerical columns:
+['theta1', 'theta2', 'theta3', 'theta4', 'theta5', 'theta6', 'thetad1', 'thetad2', 'thetad3', 'thetad4', 'thetad5', 'thetad6', 'tau1', 'tau2', 'tau3', 'tau4', 'tau5', 'dm1', 'dm2', 'dm3', 'dm4', 'dm5', 'da1', 'da2', 'da3', 'da4', 'da5', 'db1', 'db2', 'db3', 'db4', 'db5']
+
+
+✅ Assuming label column: 'thetadd6'
+
+
+Class distribution (if classification):
+thetadd6
+-0.023703    2
+ 0.022311    1
+ 0.015840    1
+-0.013414    1
+-0.052792    1
+            ..
+ 0.011485    1
+-0.046664    1
+-0.073556    1
+-0.083718    1
+-0.043182    1
+Name: count, Length: 8191, dtype: int64
+
+
+🔎 Missing Value Summary:
+- Missing values in categorical features: 0
+- Missing values in numerical features: 0
+- Total missing values: 0
+- Overall missing rate: 0.00%
+
+
+🛠 Imputation Suggestions:

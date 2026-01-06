@@ -1,0 +1,11 @@
+{
+  "categorical_cols": ["school", "sex", "address", "famsize", "Pstatus", "Mjob", "Fjob", "reason", "guardian", "schoolsup", "famsup", "paid", "activities", "nursery", "higher", "internet", "romantic"],
+  "numerical_cols": ["age", "Medu", "Fedu", "traveltime", "studytime", "failures", "famrel", "freetime", "goout", "Dalc", "Walc", "health", "absences"],
+  "encoding": {
+    "categorical_features": "onehot",
+    "numerical_features": "minmax",
+    "target": "label"
+  },
+  "batch_size": 32,
+  "epochs": 100
+}

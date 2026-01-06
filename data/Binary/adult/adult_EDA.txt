@@ -1,0 +1,92 @@
+📊 Dataset: Binary/adult/adult
+
+Shape: (48842, 15)
+
+
+Columns:
+['age', 'workclass', 'fnlwgt', 'education', 'education-num', 'marital-status', 'occupation', 'relationship', 'race', 'sex', 'capital-gain', 'capital-loss', 'hours-per-week', 'native-country', 'class']
+
+
+First 5 rows:
+   age  workclass    fnlwgt     education  education-num      marital-status  \
+0   25    Private  226802.0          11th              7       Never-married   
+1   38    Private   89814.0       HS-grad              9  Married-civ-spouse   
+2   28  Local-gov  336951.0    Assoc-acdm             12  Married-civ-spouse   
+3   44    Private  160323.0  Some-college             10  Married-civ-spouse   
+4   18        NaN  103497.0  Some-college             10       Never-married   
+
+          occupation relationship   race     sex  capital-gain  capital-loss  \
+0  Machine-op-inspct    Own-child  Black    Male           0.0           0.0   
+1    Farming-fishing      Husband  White    Male           0.0           0.0   
+2    Protective-serv      Husband  White    Male           0.0           0.0   
+3  Machine-op-inspct      Husband  Black    Male        7688.0           0.0   
+4                NaN    Own-child  White  Female           0.0           0.0   
+
+   hours-per-week native-country  class  
+0              40  United-States  <=50K  
+1              50  United-States  <=50K  
+2              40  United-States   >50K  
+3              40  United-States   >50K  
+4              30  United-States  <=50K  
+
+
+Missing values per column:
+age                  0
+workclass         2799
+fnlwgt               0
+education            0
+education-num        0
+marital-status       0
+occupation        2809
+relationship         0
+race                 0
+sex                  0
+capital-gain         0
+capital-loss         0
+hours-per-week       0
+native-country     857
+class                0
+dtype: int64
+
+
+Categorical columns:
+['workclass', 'education', 'marital-status', 'occupation', 'relationship', 'race', 'sex', 'native-country']
+
+
+Numerical columns:
+['age', 'fnlwgt', 'education-num', 'capital-gain', 'capital-loss', 'hours-per-week']
+
+
+✅ Assuming label column: 'class'
+
+
+Class distribution (if classification):
+class
+<=50K    37155
+>50K     11687
+Name: count, dtype: int64
+
+
+⚖️ Balance Check:
+- Number of classes: 2
+- Majority class count: 37155
+- Minority class count: 11687
+- Imbalance ratio (majority/minority): 3.18
+🚨 Warning: Dataset may be imbalanced!
+
+
+🔎 Missing Value Summary:
+- Missing values in categorical features: 6465
+- Missing values in numerical features: 0
+- Total missing values: 6465
+- Overall missing rate: 0.88%
+
+⚠️ Warning: Dataset has missing values!
+
+⚡ Info: Dataset has categorical features!
+
+
+🛠 Imputation Suggestions:
+- Feature 'workclass': add a new category for missing values (e.g., 'Missing')
+- Feature 'occupation': add a new category for missing values (e.g., 'Missing')
+- Feature 'native-country': add a new category for missing values (e.g., 'Missing')

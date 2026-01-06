@@ -1,0 +1,60 @@
+{
+  "vit": {
+    "model": {
+      "dim": [
+        "int",
+        96,
+        512,
+        32
+      ],
+      "depth": [
+        "int",
+        2,
+        12
+      ],
+      "heads": [
+        "int",
+        2,
+        8
+      ],
+      "mlp_dim": [
+        "categorical",
+        [3, 4]
+      ],
+      "mlp_hidden_dims": [
+        "categorical",
+        [
+          "[]",
+          "[1, 1]",
+          "[2, 1]",
+          "[1, 0.5]"
+        ]
+      ],
+      "dropout": ["uniform", 0.0, 0.2],
+      "emb_dropout": ["uniform", 0.0, 0.1]
+    },
+    "fit": {
+      "max_lr": [
+        "loguniform",
+        1e-05,
+        1e-2
+      ],
+      "div_factor": [
+        "int",
+        10,
+        1000
+      ],
+      "final_div_factor": [
+        "int",
+        100,
+        1000
+      ],
+      "weight_decay": [
+        "loguniform",
+        1e-06,
+        1e-2
+      ],
+      "pct_start": ["uniform", 0.10, 0.40]
+    }
+  }
+}

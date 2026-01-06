@@ -1,0 +1,30 @@
+{
+  "dataset_name": "DIS_lab_LoS_8",
+  "parameters": {
+    "TINTO_blur": {
+      "method": "TINTO",
+      "problem": "regression",
+      "normalize": false,
+      "blur": true,
+      "option": "maximum",
+      "pixels": 40,
+      "save_path": "SyntheticImages/Regression/DIS_lab_LoS_8/TINTO_blur"
+    },
+    "IGTD": {
+      "problem": "regression",
+      "normalize": false,
+      "fea_dist_method": "Euclidean",
+      "image_dist_method": "Euclidean",
+      "error": "abs",
+      "max_step": 30000,
+      "val_step": 500,
+      "save_path": "SyntheticImages/Regression/DIS_lab_LoS_8/IGTD"
+    },
+    "REFINED": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/DIS_lab_LoS_8/REFINED"
+    }
+  }
+}
+

@@ -1,0 +1,22 @@
+{
+  "CNN_hybrid": {
+    "model": {
+      "activation": ["categorical", ["relu"]],
+      "fusion_hidden_dims": ["categorical", [
+  "[]",
+  "[32]", "[64]", "[128]", "[256]", "[512]",
+  "[32,32]", "[64,64]", "[128,128]", "[256,256]",
+  "[64,32]", "[128,64]", "[256,128]", "[512,256]",
+  "[128,128,64]", "[256,128,64]", "[256,128,32]", "[64,32,16]"
+]],
+      "fusion_dropout": ["uniform", 0.0, 0.3]
+    },
+    "fit": {
+      "max_lr": ["loguniform", 1e-5, 1e-2],
+      "div_factor": ["int", 10, 1000],
+      "final_div_factor": ["int", 100, 1000],
+      "weight_decay": ["loguniform", 1e-6, 1e-2],
+      "pct_start": ["uniform", 0.10, 0.40]
+    }
+  }
+}

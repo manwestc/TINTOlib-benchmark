@@ -1,0 +1,63 @@
+{
+  "dataset_name": "student_performance_por",
+  "parameters": {
+    "TINTO_blur": {
+      "method": "TINTO",
+      "problem": "regression",
+      "normalize": false,
+      "blur": true,
+      "option": "maximum",
+      "pixels": 20,
+      "save_path": "SyntheticImages/Regression/student_performance_por/TINTO_blur"
+    },
+    "IGTD": {
+      "problem": "regression",
+      "normalize": false,
+      "fea_dist_method": "Euclidean",
+      "image_dist_method": "Euclidean",
+      "error": "abs",
+      "max_step": 30000,
+      "val_step": 500,
+      "save_path": "SyntheticImages/Regression/student_performance_por/IGTD"
+    },
+    "REFINED": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/student_performance_por/REFINED"
+    },
+    "BarGraph": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/student_performance_por/BarGraph"
+    },
+    "DistanceMatrix": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/student_performance_por/DistanceMatrix"
+    },
+    "Combination": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/student_performance_por/Combination"
+    },
+    "SuperTML": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/student_performance_por/SuperTML",
+      "font_size": 10
+    },
+    "FeatureWrap": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/student_performance_por/FeatureWrap",
+      "size": [9,9]
+    },
+    "BIE": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/student_performance_por/BIE",
+      "precision": 64
+    }
+  }
+}
+

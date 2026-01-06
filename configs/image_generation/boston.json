@@ -1,0 +1,63 @@
+{
+  "dataset_name": "boston",
+  "parameters": {
+    "TINTO_blur": {
+      "method": "TINTO",
+      "problem": "regression",
+      "normalize": false,
+      "blur": true,
+      "option": "maximum",
+      "pixels": 20,
+      "save_path": "SyntheticImages/Regression/boston/TINTO_blur"
+    },
+    "IGTD": {
+      "problem": "regression",
+      "normalize": false,
+      "fea_dist_method": "Euclidean",
+      "image_dist_method": "Euclidean",
+      "error": "abs",
+      "max_step": 30000,
+      "val_step": 500,
+      "save_path": "SyntheticImages/Regression/boston/IGTD"
+    },
+    "REFINED": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/boston/REFINED"
+    },
+    "BarGraph": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/boston/BarGraph"
+    },
+    "DistanceMatrix": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/boston/DistanceMatrix"
+    },
+    "Combination": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/boston/Combination"
+    },
+    "SuperTML": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/boston/SuperTML",
+      "font_size": 15
+    },
+    "FeatureWrap": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/boston/FeatureWrap",
+      "size": [6,6]
+    },
+    "BIE": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/boston/BIE",
+      "precision": 64
+    }
+  }
+}
+

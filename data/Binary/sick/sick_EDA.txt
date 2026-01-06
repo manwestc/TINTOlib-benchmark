@@ -1,0 +1,121 @@
+📊 Dataset: Binary/sick/sick
+
+Shape: (3772, 30)
+
+
+Columns:
+['age', 'sex', 'on_thyroxine', 'query_on_thyroxine', 'on_antithyroid_medication', 'sick', 'pregnant', 'thyroid_surgery', 'I131_treatment', 'query_hypothyroid', 'query_hyperthyroid', 'lithium', 'goitre', 'tumor', 'hypopituitary', 'psych', 'TSH_measured', 'TSH', 'T3_measured', 'T3', 'TT4_measured', 'TT4', 'T4U_measured', 'T4U', 'FTI_measured', 'FTI', 'TBG_measured', 'TBG', 'referral_source', 'Class']
+
+
+First 5 rows:
+    age sex on_thyroxine query_on_thyroxine on_antithyroid_medication sick  \
+0  41.0   F            f                  f                         f    f   
+1  23.0   F            f                  f                         f    f   
+2  46.0   M            f                  f                         f    f   
+3  70.0   F            t                  f                         f    f   
+4  70.0   F            f                  f                         f    f   
+
+  pregnant thyroid_surgery I131_treatment query_hypothyroid  ... TT4_measured  \
+0        f               f              f                 f  ...            t   
+1        f               f              f                 f  ...            t   
+2        f               f              f                 f  ...            t   
+3        f               f              f                 f  ...            t   
+4        f               f              f                 f  ...            t   
+
+     TT4 T4U_measured   T4U FTI_measured    FTI TBG_measured  TBG  \
+0  125.0            t  1.14            t  109.0            f  NaN   
+1  102.0            f   NaN            f    NaN            f  NaN   
+2  109.0            t  0.91            t  120.0            f  NaN   
+3  175.0            f   NaN            f    NaN            f  NaN   
+4   61.0            t  0.87            t   70.0            f  NaN   
+
+  referral_source     Class  
+0            SVHC  negative  
+1           other  negative  
+2           other  negative  
+3           other  negative  
+4             SVI  negative  
+
+[5 rows x 30 columns]
+
+
+Missing values per column:
+age                             1
+sex                           150
+on_thyroxine                    0
+query_on_thyroxine              0
+on_antithyroid_medication       0
+sick                            0
+pregnant                        0
+thyroid_surgery                 0
+I131_treatment                  0
+query_hypothyroid               0
+query_hyperthyroid              0
+lithium                         0
+goitre                          0
+tumor                           0
+hypopituitary                   0
+psych                           0
+TSH_measured                    0
+TSH                           369
+T3_measured                     0
+T3                            769
+TT4_measured                    0
+TT4                           231
+T4U_measured                    0
+T4U                           387
+FTI_measured                    0
+FTI                           385
+TBG_measured                    0
+TBG                          3772
+referral_source                 0
+Class                           0
+dtype: int64
+
+
+Categorical columns:
+['sex', 'on_thyroxine', 'query_on_thyroxine', 'on_antithyroid_medication', 'sick', 'pregnant', 'thyroid_surgery', 'I131_treatment', 'query_hypothyroid', 'query_hyperthyroid', 'lithium', 'goitre', 'tumor', 'hypopituitary', 'psych', 'TSH_measured', 'T3_measured', 'TT4_measured', 'T4U_measured', 'FTI_measured', 'TBG_measured', 'referral_source']
+
+
+Numerical columns:
+['age', 'TSH', 'T3', 'TT4', 'T4U', 'FTI', 'TBG']
+
+
+✅ Assuming label column: 'Class'
+
+
+Class distribution (if classification):
+Class
+negative    3541
+sick         231
+Name: count, dtype: int64
+
+
+⚖️ Balance Check:
+- Number of classes: 2
+- Majority class count: 3541
+- Minority class count: 231
+- Imbalance ratio (majority/minority): 15.33
+🚨 Warning: Dataset may be imbalanced!
+
+
+🔎 Missing Value Summary:
+- Missing values in categorical features: 150
+- Missing values in numerical features: 5914
+- Total missing values: 6064
+- Overall missing rate: 5.36%
+
+⚠️ Warning: Dataset has missing values!
+
+⚡ Info: Dataset has categorical features!
+
+
+🛠 Imputation Suggestions:
+- Feature 'age': median imputation (skewed/long tail) (skewness = 1.96)
+- Feature 'TSH': median imputation (skewed/long tail) (skewness = 13.88)
+- Feature 'T3': median imputation (skewed/long tail) (skewness = 1.73)
+- Feature 'TT4': median imputation (skewed/long tail) (skewness = 1.27)
+- Feature 'T4U': median imputation (skewed/long tail) (skewness = 1.23)
+- Feature 'FTI': median imputation (skewed/long tail) (skewness = 1.35)
+- Feature 'TBG': median imputation (skewed/long tail) (skewness = nan)
+- Feature 'sex': add a new category for missing values (e.g., 'Missing')

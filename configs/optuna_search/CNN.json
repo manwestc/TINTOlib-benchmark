@@ -1,0 +1,44 @@
+{
+  "CNN": {
+    "model": {
+      "in_channels": ["categorical", [3]],
+      "activation": ["categorical", ["relu"]],
+      "stem_type": ["categorical", ["3x3", "7x7"]],
+      "use_maxpool": ["categorical", [true, false]],
+      "stem_width": ["categorical", [8, 16, 32, 48, 64]],
+      "n_stages": ["int", 3, 4],
+      "blocks_per_stage": [
+        "categorical",
+        [
+          "[1,1,1]",
+          "[2,2,2]",
+          "[3,3,3]",
+          "[1,2,2]",
+          "[2,3,3]",
+          "[1,1,1,1]",
+          "[2,2,2,2]",
+          "[2,3,4,3]",
+          "[3,4,6,3]"
+        ]
+      ],
+      "base_width": ["categorical", [8, 16, 32, 48, 64]],
+      "width_mul": ["categorical", [0.75, 1.0, 1.25, 1.5, 2.0]],
+      "mlp_hidden_dims": [
+        "categorical",
+        [
+          "[]",
+          "[1,1]",
+          "[2,1]",
+          "[1,0.5]"
+        ]
+      ]
+    },
+    "fit": {
+      "max_lr": ["loguniform", 1e-05, 1e-2],
+      "div_factor": ["int", 10, 1000],
+      "final_div_factor": ["int", 100, 1000],
+      "weight_decay": ["loguniform", 1e-06, 1e-2],
+      "pct_start": ["uniform", 0.10, 0.40]
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "dataset_name": "sick_cleaned",
+  "parameters": {
+    "TINTO_blur": {
+      "method": "TINTO",
+      "problem": "supervised",
+      "normalize": false,
+      "blur": true,
+      "option": "maximum",
+      "pixels": 20,
+      "save_path": "SyntheticImages/Binary/sick_cleaned/TINTO_blur"
+    },
+    "IGTD": {
+      "problem": "supervised",
+      "normalize": false,
+      "fea_dist_method": "Euclidean",
+      "image_dist_method": "Euclidean",
+      "error": "abs",
+      "max_step": 30000,
+      "val_step": 500,
+      "save_path": "SyntheticImages/Binary/sick_cleaned/IGTD"
+    },"REFINED": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Binary/sick_cleaned/REFINED"
+    },
+    "BarGraph": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Binary/sick_cleaned/BarGraph"
+    },
+    "DistanceMatrix": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Binary/sick_cleaned/DistanceMatrix"
+    },
+    "Combination": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Binary/sick_cleaned/Combination"
+    },
+    "SuperTML": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Binary/sick_cleaned/SuperTML",
+      "font_size": 10
+    },
+    "FeatureWrap": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Binary/sick_cleaned/FeatureWrap",
+      "size": [10,10]
+    },
+    "BIE": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Binary/sick_cleaned/BIE",
+      "precision": 64
+    }
+  }
+}

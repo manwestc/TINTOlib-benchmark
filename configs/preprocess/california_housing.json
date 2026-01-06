@@ -1,0 +1,11 @@
+{
+  "categorical_cols": [],
+  "numerical_cols": ["MedInc", "HouseAge", "AveRooms", "AveBedrms", "Population", "AveOccup", "Latitude", "Longitude"],
+  "encoding": {
+    "categorical_features": "onehot",
+    "numerical_features": "minmax",
+    "target": "MedHouseVal"
+  },
+  "batch_size": 128,
+  "epochs": 100
+}

@@ -1,0 +1,17 @@
+{
+  "dataset_name": "isolet",
+  "parameters": {
+    "FeatureWrap": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Multiclass/isolet/FeatureWrap",
+      "size": [28,28]
+    },
+    "BIE": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Multiclass/isolet/BIE",
+      "precision": 64
+    }
+  }
+}

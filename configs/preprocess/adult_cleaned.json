@@ -1,0 +1,27 @@
+{
+  "categorical_cols": [
+    "workclass",
+    "education",
+    "marital-status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native-country"
+  ],
+  "numerical_cols": [
+    "age",
+    "fnlwgt",
+    "education-num",
+    "capital-gain",
+    "capital-loss",
+    "hours-per-week"
+  ],
+  "encoding": {
+    "categorical_features": "onehot",
+    "numerical_features": "minmax",
+    "target": "label"
+  },
+  "batch_size": 64,
+  "epochs": 100
+}

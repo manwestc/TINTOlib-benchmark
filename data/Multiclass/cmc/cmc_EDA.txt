@@ -1,0 +1,90 @@
+📊 Dataset: Multiclass/cmc/cmc
+
+Shape: (1473, 10)
+
+
+Columns:
+['Wifes_age', 'Wifes_education', 'Husbands_education', 'Number_of_children_ever_born', 'Wifes_religion', 'Wifes_now_working%3F', 'Husbands_occupation', 'Standard-of-living_index', 'Media_exposure', 'Contraceptive_method_used']
+
+
+First 5 rows:
+   Wifes_age  Wifes_education  Husbands_education  \
+0         24                2                   3   
+1         45                1                   3   
+2         43                2                   3   
+3         42                3                   2   
+4         36                3                   3   
+
+   Number_of_children_ever_born  Wifes_religion  Wifes_now_working%3F  \
+0                             3               1                     1   
+1                            10               1                     1   
+2                             7               1                     1   
+3                             9               1                     1   
+4                             8               1                     1   
+
+   Husbands_occupation  Standard-of-living_index  Media_exposure  \
+0                    2                         3               0   
+1                    3                         4               0   
+2                    3                         4               0   
+3                    3                         3               0   
+4                    3                         2               0   
+
+   Contraceptive_method_used  
+0                          1  
+1                          1  
+2                          1  
+3                          1  
+4                          1  
+
+
+Missing values per column:
+Wifes_age                       0
+Wifes_education                 0
+Husbands_education              0
+Number_of_children_ever_born    0
+Wifes_religion                  0
+Wifes_now_working%3F            0
+Husbands_occupation             0
+Standard-of-living_index        0
+Media_exposure                  0
+Contraceptive_method_used       0
+dtype: int64
+
+
+Categorical columns:
+['Wifes_education', 'Husbands_education', 'Wifes_religion', 'Wifes_now_working%3F', 'Husbands_occupation', 'Standard-of-living_index', 'Media_exposure']
+
+
+Numerical columns:
+['Wifes_age', 'Number_of_children_ever_born']
+
+
+✅ Assuming label column: 'Contraceptive_method_used'
+
+
+Class distribution (if classification):
+Contraceptive_method_used
+1    629
+3    511
+2    333
+Name: count, dtype: int64
+
+
+⚖️ Balance Check:
+- Number of classes: 3
+- Majority class count: 629
+- Minority class count: 333
+- Imbalance ratio (majority/minority): 1.89
+🚨 Warning: Dataset may be imbalanced!
+
+
+🔎 Missing Value Summary:
+- Missing values in categorical features: 0
+- Missing values in numerical features: 0
+- Total missing values: 0
+- Overall missing rate: 0.00%
+
+⚡ Info: Dataset has categorical features!
+
+
+🛠 Imputation Suggestions:

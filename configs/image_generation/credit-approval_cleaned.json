@@ -1,0 +1,61 @@
+{
+  "dataset_name": "credit-approval_cleaned",
+  "parameters": {
+    "TINTO_blur": {
+      "method": "TINTO",
+      "problem": "supervised",
+      "normalize": false,
+      "blur": true,
+      "option": "maximum",
+      "pixels": 20,
+      "save_path": "SyntheticImages/Binary/credit-approval_cleaned/TINTO_blur"
+    },
+    "IGTD": {
+      "problem": "supervised",
+      "normalize": false,
+      "fea_dist_method": "Euclidean",
+      "image_dist_method": "Euclidean",
+      "error": "abs",
+      "max_step": 30000,
+      "val_step": 500,
+      "save_path": "SyntheticImages/Binary/credit-approval_cleaned/IGTD"
+    },"REFINED": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Binary/credit-approval_cleaned/REFINED"
+    },
+    "BarGraph": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Binary/credit-approval_cleaned/BarGraph"
+    },
+    "DistanceMatrix": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Binary/credit-approval_cleaned/DistanceMatrix"
+    },
+    "Combination": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Binary/credit-approval_cleaned/Combination"
+    },
+    "SuperTML": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Binary/credit-approval_cleaned/SuperTML",
+      "font_size": 10
+    },
+    "FeatureWrap": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Binary/credit-approval_cleaned/FeatureWrap",
+      "size": [8,8]
+    },
+    "BIE": {
+      "problem": "supervised",
+      "normalize": false,
+      "save_path": "SyntheticImages/Binary/credit-approval_cleaned/BIE",
+      "precision": 64
+    }
+  }
+}

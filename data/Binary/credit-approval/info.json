@@ -1,0 +1,41 @@
+{
+  "name": "credit-approval",
+  "data_file": "credit-approval.csv",
+  "n_num_features": 6,
+  "n_cat_features": 9,
+  "sample_size": 690,
+  "n_instances": 690,
+  "n_features": 15,
+  "cat_frac_est": 0.6,
+  "missing_cells_estimated_from_file": 67,
+  "missing_pct_estimated_from_file": 0.6473429951690821,
+  "source": "https://api.openml.org/data/v1/download/29/credit-approval.arff",
+  "openml_page": "https://www.openml.org/d/29",
+  "original_source": "https://api.openml.org/data/v1/download/29/credit-approval.arff",
+  "task_intro": "**Source**: [OpenML](https://www.openml.org/d/29) · [Original](https://api.openml.org/data/v1/download/29/credit-approval.arff)  \n**Please cite**: http://archive.ics.uci.edu/ml/citation_policy.html  \n\n* Abstract:\n\n**Author**: Confidential - Donated by Ross Quinlan   \n**Source**: [UCI](http://archive.ics.uci.edu/ml/datasets/credit+approval) - 1987  \n**Please cite**: [UCI](http://archive.ics.uci.edu/ml/citation_policy.html)",
+  "task_type": "binary",
+  "openml_id": 29,
+  "imbalance_ratio": 1.247557003257329,
+  "n_classes": 2,
+  "target_variable": "class",
+  "target_description": null,
+  "num_feature_intro": {
+    "A2": "numeric feature",
+    "A3": "numeric feature",
+    "A8": "numeric feature",
+    "A11": "numeric feature",
+    "A14": "numeric feature",
+    "A15": "numeric feature"
+  },
+  "cat_feature_intro": {
+    "A1": "categorical feature",
+    "A4": "categorical feature",
+    "A5": "categorical feature",
+    "A6": "categorical feature",
+    "A7": "categorical feature",
+    "A9": "categorical feature",
+    "A10": "categorical feature",
+    "A12": "categorical feature",
+    "A13": "categorical feature"
+  }
+}

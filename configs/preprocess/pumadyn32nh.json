@@ -1,0 +1,11 @@
+{
+  "categorical_cols": [],
+  "numerical_cols": ["theta1", "theta2", "theta3", "theta4", "theta5", "theta6", "thetad1", "thetad2", "thetad3", "thetad4", "thetad5", "thetad6", "tau1", "tau2", "tau3", "tau4", "tau5", "dm1", "dm2", "dm3", "dm4", "dm5", "da1", "da2", "da3", "da4", "da5", "db1", "db2", "db3", "db4", "db5"],
+  "encoding": {
+    "categorical_features": "onehot",
+    "numerical_features": "minmax",
+    "target": "thetadd6"
+  },
+  "batch_size": 32,
+  "epochs": 100
+}

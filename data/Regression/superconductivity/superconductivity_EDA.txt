@@ -1,0 +1,105 @@
+📊 Dataset: Regression/superconductivity/superconductivity
+
+Shape: (21263, 82)
+
+
+Columns:
+['number_of_elements', 'mean_atomic_mass', 'wtd_mean_atomic_mass', 'gmean_atomic_mass', 'wtd_gmean_atomic_mass', 'entropy_atomic_mass', 'wtd_entropy_atomic_mass', 'range_atomic_mass', 'wtd_range_atomic_mass', 'std_atomic_mass', 'wtd_std_atomic_mass', 'mean_fie', 'wtd_mean_fie', 'gmean_fie', 'wtd_gmean_fie', 'entropy_fie', 'wtd_entropy_fie', 'range_fie', 'wtd_range_fie', 'std_fie', 'wtd_std_fie', 'mean_atomic_radius', 'wtd_mean_atomic_radius', 'gmean_atomic_radius', 'wtd_gmean_atomic_radius', 'entropy_atomic_radius', 'wtd_entropy_atomic_radius', 'range_atomic_radius', 'wtd_range_atomic_radius', 'std_atomic_radius', 'wtd_std_atomic_radius', 'mean_Density', 'wtd_mean_Density', 'gmean_Density', 'wtd_gmean_Density', 'entropy_Density', 'wtd_entropy_Density', 'range_Density', 'wtd_range_Density', 'std_Density', 'wtd_std_Density', 'mean_ElectronAffinity', 'wtd_mean_ElectronAffinity', 'gmean_ElectronAffinity', 'wtd_gmean_ElectronAffinity', 'entropy_ElectronAffinity', 'wtd_entropy_ElectronAffinity', 'range_ElectronAffinity', 'wtd_range_ElectronAffinity', 'std_ElectronAffinity', 'wtd_std_ElectronAffinity', 'mean_FusionHeat', 'wtd_mean_FusionHeat', 'gmean_FusionHeat', 'wtd_gmean_FusionHeat', 'entropy_FusionHeat', 'wtd_entropy_FusionHeat', 'range_FusionHeat', 'wtd_range_FusionHeat', 'std_FusionHeat', 'wtd_std_FusionHeat', 'mean_ThermalConductivity', 'wtd_mean_ThermalConductivity', 'gmean_ThermalConductivity', 'wtd_gmean_ThermalConductivity', 'entropy_ThermalConductivity', 'wtd_entropy_ThermalConductivity', 'range_ThermalConductivity', 'wtd_range_ThermalConductivity', 'std_ThermalConductivity', 'wtd_std_ThermalConductivity', 'mean_Valence', 'wtd_mean_Valence', 'gmean_Valence', 'wtd_gmean_Valence', 'entropy_Valence', 'wtd_entropy_Valence', 'range_Valence', 'wtd_range_Valence', 'std_Valence', 'wtd_std_Valence', 'critical_temp']
+
+
+First 5 rows:
+   number_of_elements  mean_atomic_mass  wtd_mean_atomic_mass  \
+0                   4         88.944468             57.862692   
+1                   5         92.729214             58.518416   
+2                   4         88.944468             57.885242   
+3                   4         88.944468             57.873967   
+4                   4         88.944468             57.840143   
+
+   gmean_atomic_mass  wtd_gmean_atomic_mass  entropy_atomic_mass  \
+0          66.361592              36.116612             1.181795   
+1          73.132787              36.396602             1.449309   
+2          66.361592              36.122509             1.181795   
+3          66.361592              36.119560             1.181795   
+4          66.361592              36.110716             1.181795   
+
+   wtd_entropy_atomic_mass  range_atomic_mass  wtd_range_atomic_mass  \
+0                 1.062396          122.90607              31.794921   
+1                 1.057755          122.90607              36.161939   
+2                 0.975980          122.90607              35.741099   
+3                 1.022291          122.90607              33.768010   
+4                 1.129224          122.90607              27.848743   
+
+   std_atomic_mass  ...  wtd_mean_Valence  gmean_Valence  wtd_gmean_Valence  \
+0        51.968828  ...          2.257143       2.213364           2.219783   
+1        47.094633  ...          2.257143       1.888175           2.210679   
+2        51.968828  ...          2.271429       2.213364           2.232679   
+3        51.968828  ...          2.264286       2.213364           2.226222   
+4        51.968828  ...          2.242857       2.213364           2.206963   
+
+   entropy_Valence  wtd_entropy_Valence  range_Valence  wtd_range_Valence  \
+0         1.368922             1.066221              1           1.085714   
+1         1.557113             1.047221              2           1.128571   
+2         1.368922             1.029175              1           1.114286   
+3         1.368922             1.048834              1           1.100000   
+4         1.368922             1.096052              1           1.057143   
+
+   std_Valence  wtd_std_Valence  critical_temp  
+0     0.433013         0.437059           29.0  
+1     0.632456         0.468606           26.0  
+2     0.433013         0.444697           19.0  
+3     0.433013         0.440952           22.0  
+4     0.433013         0.428809           23.0  
+
+[5 rows x 82 columns]
+
+
+Missing values per column:
+number_of_elements       0
+mean_atomic_mass         0
+wtd_mean_atomic_mass     0
+gmean_atomic_mass        0
+wtd_gmean_atomic_mass    0
+                        ..
+range_Valence            0
+wtd_range_Valence        0
+std_Valence              0
+wtd_std_Valence          0
+critical_temp            0
+Length: 82, dtype: int64
+
+
+Categorical columns:
+[]
+
+
+Numerical columns:
+['number_of_elements', 'mean_atomic_mass', 'wtd_mean_atomic_mass', 'gmean_atomic_mass', 'wtd_gmean_atomic_mass', 'entropy_atomic_mass', 'wtd_entropy_atomic_mass', 'range_atomic_mass', 'wtd_range_atomic_mass', 'std_atomic_mass', 'wtd_std_atomic_mass', 'mean_fie', 'wtd_mean_fie', 'gmean_fie', 'wtd_gmean_fie', 'entropy_fie', 'wtd_entropy_fie', 'range_fie', 'wtd_range_fie', 'std_fie', 'wtd_std_fie', 'mean_atomic_radius', 'wtd_mean_atomic_radius', 'gmean_atomic_radius', 'wtd_gmean_atomic_radius', 'entropy_atomic_radius', 'wtd_entropy_atomic_radius', 'range_atomic_radius', 'wtd_range_atomic_radius', 'std_atomic_radius', 'wtd_std_atomic_radius', 'mean_Density', 'wtd_mean_Density', 'gmean_Density', 'wtd_gmean_Density', 'entropy_Density', 'wtd_entropy_Density', 'range_Density', 'wtd_range_Density', 'std_Density', 'wtd_std_Density', 'mean_ElectronAffinity', 'wtd_mean_ElectronAffinity', 'gmean_ElectronAffinity', 'wtd_gmean_ElectronAffinity', 'entropy_ElectronAffinity', 'wtd_entropy_ElectronAffinity', 'range_ElectronAffinity', 'wtd_range_ElectronAffinity', 'std_ElectronAffinity', 'wtd_std_ElectronAffinity', 'mean_FusionHeat', 'wtd_mean_FusionHeat', 'gmean_FusionHeat', 'wtd_gmean_FusionHeat', 'entropy_FusionHeat', 'wtd_entropy_FusionHeat', 'range_FusionHeat', 'wtd_range_FusionHeat', 'std_FusionHeat', 'wtd_std_FusionHeat', 'mean_ThermalConductivity', 'wtd_mean_ThermalConductivity', 'gmean_ThermalConductivity', 'wtd_gmean_ThermalConductivity', 'entropy_ThermalConductivity', 'wtd_entropy_ThermalConductivity', 'range_ThermalConductivity', 'wtd_range_ThermalConductivity', 'std_ThermalConductivity', 'wtd_std_ThermalConductivity', 'mean_Valence', 'wtd_mean_Valence', 'gmean_Valence', 'wtd_gmean_Valence', 'entropy_Valence', 'wtd_entropy_Valence', 'range_Valence', 'wtd_range_Valence', 'std_Valence', 'wtd_std_Valence']
+
+
+✅ Assuming label column: 'critical_temp'
+
+
+Class distribution (if classification):
+critical_temp
+80.000    143
+20.000    129
+30.000    125
+90.000    122
+40.000    111
+         ... 
+7.035       1
+18.260      1
+16.090      1
+4.109       1
+9.830       1
+Name: count, Length: 3007, dtype: int64
+
+
+🔎 Missing Value Summary:
+- Missing values in categorical features: 0
+- Missing values in numerical features: 0
+- Total missing values: 0
+- Overall missing rate: 0.00%
+
+
+🛠 Imputation Suggestions:

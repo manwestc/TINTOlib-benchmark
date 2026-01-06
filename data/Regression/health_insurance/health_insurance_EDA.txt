@@ -1,0 +1,86 @@
+📊 Dataset: Regression/health_insurance/health_insurance
+
+Shape: (22272, 12)
+
+
+Columns:
+['hhi', 'whi', 'hhi2', 'education', 'race', 'hispanic', 'experience', 'kidslt6', 'kids618', 'husby', 'region', 'whrswk']
+
+
+First 5 rows:
+   hhi  whi hhi2   education   race hispanic  experience  kidslt6  kids618  \
+0   no   no   no  13-15years  white       no        13.0        2        1   
+1   no  yes   no  13-15years  white       no        24.0        0        1   
+2  yes   no  yes     12years  white       no        43.0        0        0   
+3   no  yes  yes  13-15years  white       no        17.0        0        1   
+4  yes   no  yes   9-11years  white       no        44.5        0        0   
+
+    husby        region  whrswk  
+0  11.960  northcentral       0  
+1   1.200  northcentral      50  
+2  31.275  northcentral      40  
+3   9.000  northcentral      40  
+4   0.000  northcentral       0  
+
+
+Missing values per column:
+hhi           0
+whi           0
+hhi2          0
+education     0
+race          0
+hispanic      0
+experience    0
+kidslt6       0
+kids618       0
+husby         0
+region        0
+whrswk        0
+dtype: int64
+
+
+Categorical columns:
+['hhi', 'whi', 'hhi2', 'education', 'race', 'hispanic', 'region']
+
+
+Numerical columns:
+['experience', 'kidslt6', 'kids618', 'husby']
+
+
+✅ Assuming label column: 'whrswk'
+
+
+Class distribution (if classification):
+whrswk
+40    7677
+0     6652
+35     871
+30     811
+20     791
+      ... 
+68       1
+59       1
+51       1
+77       1
+72       1
+Name: count, Length: 75, dtype: int64
+
+
+⚖️ Balance Check:
+- Number of classes: 75
+- Majority class count: 7677
+- Minority class count: 1
+- Imbalance ratio (majority/minority): 7677.00
+🚨 Warning: Dataset may be imbalanced!
+
+
+🔎 Missing Value Summary:
+- Missing values in categorical features: 0
+- Missing values in numerical features: 0
+- Total missing values: 0
+- Overall missing rate: 0.00%
+
+⚡ Info: Dataset has categorical features!
+
+
+🛠 Imputation Suggestions:

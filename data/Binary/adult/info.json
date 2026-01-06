@@ -1,0 +1,40 @@
+{
+  "name": "adult",
+  "data_file": "adult.csv",
+  "n_num_features": 6,
+  "n_cat_features": 8,
+  "sample_size": 48842,
+  "n_instances": 48842,
+  "n_features": 14,
+  "cat_frac_est": 0.5714285714285714,
+  "missing_cells_estimated_from_file": 6465,
+  "missing_pct_estimated_from_file": 0.9454684785342825,
+  "source": "https://api.openml.org/data/v1/download/1595261/adult.arff",
+  "openml_page": "https://www.openml.org/d/1590",
+  "original_source": "https://api.openml.org/data/v1/download/1595261/adult.arff",
+  "task_intro": "**Source**: [OpenML](https://www.openml.org/d/1590) · [Original](https://api.openml.org/data/v1/download/1595261/adult.arff)  \n\n* Abstract:\n\n**Author**: Ronny Kohavi and Barry Becker  \n**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/Adult) - 1996  \n**Please cite**: Ron Kohavi, \"Scaling Up the Accuracy of Naive-Bayes Classifiers: a Decision-Tree Hybrid\", Proceedings of the Second International Conference on Knowledge Discovery and Data Mining, 1996",
+  "task_type": "binary",
+  "openml_id": 1590,
+  "imbalance_ratio": 3.179173440574998,
+  "n_classes": 2,
+  "target_variable": "class",
+  "target_description": null,
+  "num_feature_intro": {
+    "age": "numeric feature",
+    "fnlwgt": "numeric feature",
+    "education-num": "numeric feature",
+    "capital-gain": "numeric feature",
+    "capital-loss": "numeric feature",
+    "hours-per-week": "numeric feature"
+  },
+  "cat_feature_intro": {
+    "workclass": "categorical feature",
+    "education": "categorical feature",
+    "marital-status": "categorical feature",
+    "occupation": "categorical feature",
+    "relationship": "categorical feature",
+    "race": "categorical feature",
+    "sex": "categorical feature",
+    "native-country": "categorical feature"
+  }
+}

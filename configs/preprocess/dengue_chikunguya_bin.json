@@ -1,0 +1,11 @@
+{
+  "categorical_cols": ["CS_SEXO", "CS_GESTANT", "CS_RACA", "CS_ZONA", "FEBRE", "MIALGIA", "CEFALEIA", "EXANTEMA", "VOMITO", "NAUSEA", "DOR_COSTAS", "CONJUNTVIT", "ARTRITE", "ARTRALGIA", "PETEQUIA_N", "LACO", "DOR_RETRO", "DIABETES", "HEMATOLOG", "HEPATOPAT", "RENAL", "HIPERTENSA", "ACIDO_PEPT", "AUTO_IMUNE"  ],
+  "numerical_cols": ["NU_IDADE_N", "DIAS"],
+  "encoding": {
+    "categorical_features": "onehot",
+    "numerical_features": "minmax",
+    "target": "label"
+  },
+  "batch_size": 64,
+  "epochs": 100
+}

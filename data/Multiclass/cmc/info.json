@@ -1,0 +1,35 @@
+{
+  "name": "cmc",
+  "data_file": "cmc.csv",
+  "n_num_features": 2,
+  "n_cat_features": 7,
+  "sample_size": 1473,
+  "n_instances": 1473,
+  "n_features": 9,
+  "cat_frac_est": 0.7777777777777778,
+  "missing_cells_estimated_from_file": 0,
+  "missing_pct_estimated_from_file": 0.0,
+  "source": "https://api.openml.org/data/v1/download/23/cmc.arff",
+  "openml_page": "https://www.openml.org/d/23",
+  "original_source": "https://api.openml.org/data/v1/download/23/cmc.arff",
+  "task_intro": "**Author**: Tjen-Sien Lim  \n**Source**: [OpenML](https://www.openml.org/d/23) · [Original](https://api.openml.org/data/v1/download/23/cmc.arff)  \n**Please cite**: https://archive.ics.uci.edu/ml/citation_policy.html  \n\n* Abstract:\n\n**Author**: [Tjen-Sien Lim](limt@stat.wisc.edu) \n**Source**: [As obtained from UCI](https://archive.ics.uci.edu/ml/datasets/Contraceptive+Method+Choice)\n**Please cite**: [UCI citation](https://archive.ics.uci.edu/ml/citation_policy.html)",
+  "task_type": "multiclass",
+  "openml_id": 23,
+  "imbalance_ratio": 1.8888888888888888,
+  "n_classes": 3,
+  "target_variable": "Contraceptive_method_used",
+  "target_description": null,
+  "num_feature_intro": {
+    "Wifes_age": "numeric feature",
+    "Number_of_children_ever_born": "numeric feature"
+  },
+  "cat_feature_intro": {
+    "Wifes_education": "categorical feature",
+    "Husbands_education": "categorical feature",
+    "Wifes_religion": "categorical feature",
+    "Wifes_now_working%3F": "categorical feature",
+    "Husbands_occupation": "categorical feature",
+    "Standard-of-living_index": "categorical feature",
+    "Media_exposure": "categorical feature"
+  }
+}

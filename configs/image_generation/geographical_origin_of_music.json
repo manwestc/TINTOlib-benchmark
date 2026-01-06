@@ -1,0 +1,63 @@
+{
+  "dataset_name": "geographical_origin_of_music",
+  "parameters": {
+    "TINTO_blur": {
+      "method": "TINTO",
+      "problem": "regression",
+      "normalize": false,
+      "blur": true,
+      "option": "maximum",
+      "pixels": 20,
+      "save_path": "SyntheticImages/Regression/geographical_origin_of_music/TINTO_blur"
+    },
+    "IGTD": {
+      "problem": "regression",
+      "normalize": false,
+      "fea_dist_method": "Euclidean",
+      "image_dist_method": "Euclidean",
+      "error": "abs",
+      "max_step": 30000,
+      "val_step": 500,
+      "save_path": "SyntheticImages/Regression/geographical_origin_of_music/IGTD"
+    },
+    "REFINED": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/geographical_origin_of_music/REFINED"
+    },
+    "BarGraph": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/geographical_origin_of_music/BarGraph"
+    },
+    "DistanceMatrix": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/geographical_origin_of_music/DistanceMatrix"
+    },
+    "Combination": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/geographical_origin_of_music/Combination"
+    },
+    "SuperTML": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/geographical_origin_of_music/SuperTML",
+      "font_size": 5
+    },
+    "FeatureWrap": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/geographical_origin_of_music/FeatureWrap",
+      "size": [14,14]
+    },
+    "BIE": {
+      "problem": "regression",
+      "normalize": false,
+      "save_path": "SyntheticImages/Regression/geographical_origin_of_music/BIE",
+      "precision": 64
+    }
+  }
+}
+
