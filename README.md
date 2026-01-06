@@ -1,8 +1,8 @@
-# Benchmark of Spatial Encoding Methods for Tabular Data with Deep Neural Networks
+# A Comprehensive Benchmark of Spatial Encoding Methods for Tabular Data with Deep Neural Networks
 
 **Authors:** Jiayun Liu, Manuel Castillo-Cara, Raúl García-Castro  
 **Affiliation:** Universidad Politécnica de Madrid  
-**Published in:** Information Fusion, Vol. 130, 2026  
+**Published in:** Information Fusion, Vol. 130, 2026 (Open Access)  
 **DOI:** https://doi.org/10.1016/j.inffus.2025.104088  
 **Project Page:** https://oeg-upm.github.io/TINTOlib/
 
@@ -10,9 +10,9 @@
 
 ## Overview
 
-While deep neural networks excel at learning from images and text, they often underperform on tabular data compared to traditional machine learning methods. This repository presents a comprehensive benchmark evaluating **spatial encoding methods** — techniques that transform tabular data into synthetic images — to enable the use of vision architectures (CNNs and Vision Transformers) on tabular datasets.
+Despite the success of deep neural networks on perceptual data, their performance on tabular data remains limited, where traditional models still outperform them. A promising alternative is to transform tabular data into synthetic images, enabling the use of vision architectures such as Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs). However, the literature lacks a large-scale, standardized benchmark evaluating these transformation techniques.
 
-This work evaluates 9 spatial encoding methods across 24 diverse datasets using rigorous hyperparameter optimization, providing empirical guidance on when and how to effectively apply image-based deep learning to tabular data.
+This repository presents **the first comprehensive evaluation of 9 spatial encoding methods across 24 diverse regression and classification datasets**. We assess performance, scalability, and computational trade-offs under a unified framework with rigorous hyperparameter optimization, providing clear guidance for researchers and practitioners on when and how to effectively apply these techniques.
 
 ## Video
 
@@ -23,15 +23,28 @@ https://github.com/user-attachments/assets/8b167075-2010-4072-a5ff-dea6fc117437
 ## Research Questions and Findings
 
 **Main Questions:**
-- How do different spatial encoding methods compare across diverse datasets?
-- Do vision architectures outperform traditional deep learning on transformed tabular data?
-- Can hybrid models (combining vision and dense layers) improve generalization?
+- How do different spatial encoding methods compare across diverse datasets and tasks?
+- Do vision architectures (CNN, ViT) outperform traditional deep learning on transformed tabular data?
+- What role do hybrid models (combining vision and dense layers) play in performance and variance reduction?
+- How do sample size (N) and dimensionality (d) affect transformation method effectiveness?
 
 **Key Findings:**
-- **REFINED** is the most robust transformation method across tasks and data regimes
-- Encoding method choice has stronger impact on performance than architecture selection
-- Hybrid models (CNN+MLP, ViT+MLP) reduce variance, especially beneficial for smaller datasets
-- Performance is structured by data regimes: optimal methods vary with sample size (N) and dimensionality (d)
+- **REFINED emerges as the most robust transformation** across tasks and datasets
+- **Transformation method choice exerts significantly stronger influence** on predictive performance than the chosen vision architecture
+- **Performance landscape is structured by data regimes**, defined by sample size (N) and dimensionality (d)
+- **Hybrid models (CNN+MLP, ViT+MLP) consistently reduce predictive variance**, offering advantages especially in smaller datasets, yet play a secondary role to transformation choice
+- **Transforming tabular data into synthetic images is a powerful, yet data-dependent strategy** — optimal methods vary across different data regimes
+
+---
+
+## Main Contributions
+
+1. **First large-scale standardized benchmark** for spatial encoding methods on tabular data
+2. **Comprehensive evaluation** of 9 methods across 24 diverse datasets spanning regression and classification tasks
+3. **Unified framework** with rigorous hyperparameter optimization ensuring fair comparison
+4. **Data regime analysis** revealing how sample size (N) and dimensionality (d) structure performance
+5. **Practical insights** on scalability, computational trade-offs, and architectural interplay
+6. **Clear guidance** for researchers and practitioners on method selection strategies
 
 ---
 
@@ -95,19 +108,26 @@ The MIMO dataset is exceptionally large and requires separate download and prepr
 
 ## Methodology
 
+### Unified Evaluation Framework
+This benchmark establishes a standardized evaluation framework ensuring fair comparison across all methods:
+- Consistent data preprocessing and splitting procedures
+- Equal computational budget for all method-architecture combinations
+- Identical training procedures and convergence criteria
+
 ### Hyperparameter Optimization
-- Framework: Optuna with Tree Parzen Estimator
-- Equal computational budget across all method-architecture combinations
-- Systematic search for fair comparison
+- **Framework:** Optuna with Tree Parzen Estimator (TPE)
+- **Approach:** Rigorous systematic search for each method-architecture combination
+- **Fairness:** All models receive equal optimization budget to ensure unbiased comparison
 
 ### Evaluation Metrics
-- **Regression:** RMSE
+- **Regression:** RMSE (Root Mean Squared Error)
 - **Classification:** Accuracy, Precision, Recall, F1-score, ROC-AUC
 
 ### Statistical Rigor
 - Stratified k-fold cross-validation
-- Variance analysis across runs
-- Data regime-based performance grouping
+- Variance analysis across multiple runs
+- **Data regime-based analysis:** Performance grouped by sample size (N) and dimensionality (d)
+- Scalability and computational trade-off assessment
 
 ---
 
