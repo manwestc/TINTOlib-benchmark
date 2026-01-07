@@ -10,7 +10,6 @@
 ---
 
 
-
 **👥 Authors:** Jiayun Liu, Manuel Castillo-Cara, Raúl García-Castro  
 **🏛️ Affiliation:** Universidad Politécnica de Madrid  
 **📘 Published in:** *Information Fusion*, Vol. 130, 2026 (Open Access)  
@@ -24,6 +23,12 @@
 Despite the success of deep learning in vision and language, tabular data remains a challenge where classical models often outperform DNNs. A promising alternative is to transform tabular data into synthetic images to leverage vision architectures like CNNs and ViTs.
 
 This repository presents the **first large-scale benchmark of 9 spatial encoding methods** across **24 regression and classification datasets**, evaluated under a **unified framework** with rigorous optimization and statistical testing.
+
+<div>
+<p align = "center">
+<kbd><img src="https://raw.githubusercontent.com/DCY1117/TEMP-Images/refs/heads/main/TINTOlib-images/blurring.png" alt="TINTO blurring" width="250"></kbd>
+</p>
+</div>
 
 ---
 
@@ -166,47 +171,54 @@ pip install -r requirements.txt
 ```
 
 ### Core Dependencies
-- tintolib>=0.0.26
-- torch
-- scikit-learn
-- optuna
-- opencv-python
+- `tintolib`
+- `torch`
+- `scikit-learn`
+- `optuna`
+- `opencv-python`
 
 ---
 
 ▶️ Execution Pipeline
-1. 1_data_EDA.ipynb — Dataset exploration
-2. 2_Generate_images.ipynb — Generate synthetic images
-3. 3_Preprocessing_And_Training_Baseline.ipynb — Traditional ML models
-4. 3_Preprocessing_And_Training_Deep.ipynb — MLPs
-5. 3_Preprocessing_And_Training_Deep_Vision.ipynb — CNNs / ViTs
-6. 3_Preprocessing_And_Training_Hybrid.ipynb — HyNNs
+1. `1_data_EDA.ipynb` — Dataset exploration
+2. `2_Generate_images.ipynb` — Generate synthetic images
+3. `3_Preprocessing_And_Training_Baseline.ipynb` — Traditional ML models
+4. `3_Preprocessing_And_Training_Deep.ipynb` — MLPs
+5. `3_Preprocessing_And_Training_Deep_Vision.ipynb` — CNNs / ViTs
+6. `3_Preprocessing_And_Training_Hybrid.ipynb` — HyNNs
 
 ---
 
 📄 Citation
 
-If you use this benchmark or TINTOlib, please cite our publications:
-```
-@article{LIU2026104088,
-  title = {A comprehensive benchmark of spatial encoding methods for tabular data with deep neural networks},
-  journal = {Information Fusion},
-  volume = {130},
-  pages = {104088},
-  year = {2026},
-  doi = {10.1016/j.inffus.2025.104088}
-}
+If you use TINTOlib in your research, please cite our papers: 
+
+- [SoftwareX journal](https://doi.org/10.1016/j.softx.2025.102444):
+
+```bibtex
+  @article{LIU2025102444,
+    title = {TINTOlib: A Python library for transforming tabular data into synthetic images for deep neural networks},
+    journal = {SoftwareX},
+    volume = {32},
+    pages = {102444},
+    year = {2025},
+    issn = {2352-7110},
+    doi = {https://doi.org/10.1016/j.softx.2025.102444}
+  }
 ```
 
+
+- [Information Fusion journal](https://doi.org/10.1016/j.inffus.2025.104088):
+
 ```
-@article{LIU2025102444,
-  title = {TINTOlib: A Python library for transforming tabular data into synthetic images},
-  journal = {SoftwareX},
-  volume = {32},
-  pages = {102444},
-  year = {2025},
-  doi = {10.1016/j.softx.2025.102444}
-}
+@article{LIU2026104088,
+    title = {A comprehensive benchmark of spatial encoding methods for tabular data with deep neural networks},
+    journal = {Information Fusion},
+    volume = {130},
+    pages = {104088},
+    year = {2026},
+    doi = {10.1016/j.inffus.2025.104088}
+  }
 ```
 
 ---
