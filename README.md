@@ -163,24 +163,6 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
-
-
----
-
-## 🚀 Getting Started
-
-### Installation
-
-```bash
-git clone https://github.com/manwestc/TINTOlib-benchmark
-cd TINTOlib-benchmark
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
 ```
 
 ### Core Dependencies
@@ -205,7 +187,7 @@ pip install -r requirements.txt
 📄 Citation
 
 If you use this benchmark or TINTOlib, please cite our publications:
-
+```
 @article{LIU2026104088,
   title = {A comprehensive benchmark of spatial encoding methods for tabular data with deep neural networks},
   journal = {Information Fusion},
@@ -214,7 +196,9 @@ If you use this benchmark or TINTOlib, please cite our publications:
   year = {2026},
   doi = {10.1016/j.inffus.2025.104088}
 }
+```
 
+```
 @article{LIU2025102444,
   title = {TINTOlib: A Python library for transforming tabular data into synthetic images},
   journal = {SoftwareX},
@@ -223,18 +207,28 @@ If you use this benchmark or TINTOlib, please cite our publications:
   year = {2025},
   doi = {10.1016/j.softx.2025.102444}
 }
+```
 
 ---
 
-📬 Contact
-- Jiayun Liu: jiayun.liu@upm.es
-- Manuel Castillo-Cara
-- Raúl García-Castro
 
-For full docs and tutorials, visit [TINTOlib Library](https://github.com/oeg-upm/TINTOlib)
+## 🛡️ License
+
+TINTOlib is available under the **[Apache License 2.0](https://github.com/manwestc/TINTOlib-benchmark/blob/main/LICENSE)**.
 
 ---
 
-📝 License
+## 👥 Authors
+- **[Jiayun Liu](https://github.com/DCY1117)**
+- **[Manuel Castillo-Cara](https://github.com/manwestc)**
+- **[Raúl García-Castro](https://github.com/rgcmme)**
 
-Distributed under Apache 2.0 License. See LICENSE for details.
+---
+
+## 🏛️ Contributors
+
+<div>
+<p align = "center">
+<kbd><img src="https://raw.githubusercontent.com/DCY1117/TEMP-Images/refs/heads/main/TINTOlib-images/logo-oeg.png" alt="Ontology Engineering Group" width="150"></kbd> <kbd><img src="https://raw.githubusercontent.com/DCY1117/TEMP-Images/refs/heads/main/TINTOlib-images/logo-upm.png" alt="Universidad Politécnica de Madrid" width="150"></kbd> <kbd><img src="https://raw.githubusercontent.com/DCY1117/TEMP-Images/refs/heads/main/TINTOlib-images/logo-uned-.jpg" alt="Universidad Nacional de Educación a Distancia" width="231"></kbd> <kbd><img src="https://raw.githubusercontent.com/DCY1117/TEMP-Images/refs/heads/main/TINTOlib-images/logo-uclm.png" alt="Universidad de Castilla-La Mancha" width="115"></kbd> 
+</p>
+</div>
