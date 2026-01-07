@@ -35,9 +35,9 @@ Despite the success of deep learning in vision and language, tabular data remain
 This repository presents the **first large-scale benchmark of 9 spatial encoding methods** across **24 regression and classification datasets**, evaluated under a **unified framework** with rigorous optimization and statistical testing.
 
 
-### 🎬 TINTOlib — Overview Video (English)
+### 🎬 TINTOlib benchmark — Overview Video (English)
 
-
+https://github.com/user-attachments/assets/f2d5ec08-8d33-4406-a3a0-5150ba9e511c
 
 ---
 
