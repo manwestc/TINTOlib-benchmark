@@ -24,11 +24,11 @@ Despite the success of deep learning in vision and language, tabular data remain
 
 This repository presents the **first large-scale benchmark of 9 spatial encoding methods** across **24 regression and classification datasets**, evaluated under a **unified framework** with rigorous optimization and statistical testing.
 
-<div>
-<p align = "center">
-<kbd><img src="https://raw.githubusercontent.com/DCY1117/TEMP-Images/refs/heads/main/TINTOlib-images/blurring.png" alt="TINTO blurring" width="250"></kbd>
+<p align="center">
+  <a href="https://github.com/oeg-upm/TINTOlib-Crash_Course/blob/main/5_TINTOlib%20Videotutorial%20course/README.md" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-VideoTutorial%20Course-black?style=for-the-badge&logo=GitHub&logoColor=white" alt="Access the Course on GitHub"/>
+  </a>
 </p>
-</div>
 
 ---
 
