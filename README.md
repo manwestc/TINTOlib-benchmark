@@ -9,7 +9,6 @@
 
 ---
 
-
 **👥 Authors:** Jiayun Liu, Manuel Castillo-Cara, Raúl García-Castro  
 **🏛️ Affiliation:** Universidad Politécnica de Madrid  
 **📘 Published in:** *Information Fusion*, Vol. 130, 2026 (Open Access)  
@@ -17,6 +16,14 @@
 **📂 Project Page:** [TINTOlib Lubrary](https://github.com/oeg-upm/TINTOlib)
 
 ---
+
+<div>
+    <p align = "center">
+    <img src="https://raw.githubusercontent.com/DCY1117/TEMP-Images/refs/heads/main/TINTOlib-images/logo.svg" alt="TINTO Logo" width="150">
+    </p>
+</div>
+
+--
 
 ## 🔍 Overview
 
