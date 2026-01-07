@@ -2,12 +2,14 @@
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-View%20Documentation-brightgreen?logo=github)](https://oeg-upm.github.io/TINTOlib/)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](https://github.com/oeg-upm/TINTOlib-Documentation/blob/main/LICENSE)
-[![Python Version](https://img.shields.io/badge/Python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10%20%7C%203.11-blue)](https://pypi.python.org/pypi/)
+[![Python Version](https://shields.io/badge/python-3.11+-blue)](https://pypi.python.org/pypi/)
 [![Documentation Status](https://readthedocs.org/projects/tintolib/badge/?version=latest)](https://tintolib.readthedocs.io/en/latest/)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/manwestc/TINTOlib-benchmark)
 [![PyPI Downloads](https://static.pepy.tech/badge/tintolib)](https://pepy.tech/projects/tintolib)
 
 ---
+
+
 
 **👥 Authors:** Jiayun Liu, Manuel Castillo-Cara, Raúl García-Castro  
 **🏛️ Affiliation:** Universidad Politécnica de Madrid  
