@@ -1,25 +1,31 @@
 cff-version: 1.2.0
-message: "If you use this benchmark or library, please cite the following article:"
-type: article
-title: "A comprehensive benchmark of spatial encoding methods for tabular data with deep neural networks"
-authors:
-  - given-names: Jiayun
-    family-names: Liu
-  - given-names: Manuel
-    family-names: Castillo-Cara
-  - given-names: Raul
-    family-names: Garcia-Castro
-journal: "Information Fusion"
-volume: "130"
-pages: "104088"
-year: 2026
+message: "If you use this software, please cite the following article."
+title: "TINTOlib"
+version: "0.0.26"
 doi: 10.1016/j.inffus.2025.104088
-url: https://www.sciencedirect.com/science/article/pii/S1566253525011509
-keywords:
-  - Hybrid neural networks
-  - TINTOlib
-  - Benchmark
-  - Spatial encoding
-  - Synthetic images
-  - Tabular-to-image
-  - Tabular2image
+date-released: 2025-12-20
+url: "https://github.com/oeg-upm/TINTOlib"
+authors:
+  - family-names: Liu
+    given-names: Jiayun
+  - family-names: Castillo-Cara
+    given-names: Manuel
+  - family-names: Garcia-Castro
+    given-names: Raul
+
+preferred-citation:
+  type: article
+  title: "A comprehensive benchmark of spatial encoding methods for tabular data with deep neural networks"
+  authors:
+    - family-names: Liu
+      given-names: Jiayun
+    - family-names: Castillo-Cara
+      given-names: Manuel
+    - family-names: Garcia-Castro
+      given-names: Raul
+  journal: "Information Fusion"
+  volume: 130
+  pages: "104088"
+  year: 2026
+  doi: "10.1016/j.inffus.2025.104088"
+  url: "https://www.sciencedirect.com/science/article/pii/S1566253525011509"
