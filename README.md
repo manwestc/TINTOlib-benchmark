@@ -15,7 +15,7 @@
 **🏛️ Affiliation:** Universidad Politécnica de Madrid  
 **📘 Published in:** *Information Fusion*, Vol. 130, 2026 (Open Access)  
 **🔗 DOI:** [10.1016/j.inffus.2025.104088](https://doi.org/10.1016/j.inffus.2025.104088)  
-**📂 Project Page:** [TINTOlib Documentation](https://oeg-upm.github.io/TINTOlib/)
+**📂 Project Page:** [TINTOlib Lubrary](https://github.com/oeg-upm/TINTOlib)
 
 ---
 
