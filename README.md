@@ -117,6 +117,7 @@ Requires separate download and preprocessing:
 
 ## 🗂️ Repository Structure
 
+```
 .
 ├── 1_data_EDA.ipynb                          # Dataset exploration and analysis
 ├── 2_Generate_images.ipynb                   # Image generation from tabular data
@@ -136,6 +137,7 @@ Requires separate download and preprocessing:
 │   ├── Multiclass/
 │   └── Regression/
 └── logs/                                    # Training results
+```
 
 ---
 
