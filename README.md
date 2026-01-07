@@ -183,7 +183,7 @@ pip install -r requirements.txt
 
 ---
 
-▶️ Execution Pipeline
+## ▶️ Execution Pipeline
 1. `1_data_EDA.ipynb` — Dataset exploration
 2. `2_Generate_images.ipynb` — Generate synthetic images
 3. `3_Preprocessing_And_Training_Baseline.ipynb` — Traditional ML models
