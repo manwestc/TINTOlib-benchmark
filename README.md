@@ -23,7 +23,10 @@
     </p>
 </div>
 
+
 ---
+
+
 
 ## 🔍 Overview
 
@@ -31,8 +34,10 @@ Despite the success of deep learning in vision and language, tabular data remain
 
 This repository presents the **first large-scale benchmark of 9 spatial encoding methods** across **24 regression and classification datasets**, evaluated under a **unified framework** with rigorous optimization and statistical testing.
 
-- **Synthetic images using Hybrid Neural Network with ViT (HyViT)**  
-  ![Tabular-to-Image HyNNViT](imgs/HybridViT.png)
+
+### 🎬 TINTOlib — Overview Video (English)
+
+
 
 ---
 
@@ -50,6 +55,7 @@ This repository presents the **first large-scale benchmark of 9 spatial encoding
 - **Performance landscape is structured by data regimes** (sample size and dimensionality).
 - **Hybrid models (CNN+MLP, ViT+MLP) consistently reduce predictive variance**.
 - **Transforming tabular data into synthetic images is a powerful, data-dependent strategy**.
+
 
 ---
 
@@ -81,6 +87,8 @@ This repository presents the **first large-scale benchmark of 9 spatial encoding
 - Deep Learning: MLP, CNN, ViT
 - Hybrid: CNN+MLP, ViT+MLP
 
+- **Synthetic images using Hybrid Neural Network with ViT (HyViT)**  
+  ![Tabular-to-Image HyNNViT](imgs/HybridViT.png)
 
 ---
 
