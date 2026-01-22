@@ -49,7 +49,7 @@
       "problem": "supervised",
       "normalize": false,
       "save_path": "SyntheticImages/Multiclass/dna/FeatureWrap",
-      "size": [8,8]
+      "size": [24,24]
     },
     "BIE": {
       "problem": "supervised",
