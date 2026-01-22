@@ -1,61 +1,13 @@
 {
-  "dataset_name": "qsar-biodeg",
-  "parameters": {
-    "TINTO_blur": {
-      "method": "TINTO",
-      "problem": "supervised",
-      "normalize": false,
-      "blur": true,
-      "option": "maximum",
-      "pixels": 20,
-      "save_path": "SyntheticImages/Binary/qsar-biodeg/TINTO_blur"
-    },
-    "IGTD": {
-      "problem": "supervised",
-      "normalize": false,
-      "fea_dist_method": "Euclidean",
-      "image_dist_method": "Euclidean",
-      "error": "abs",
-      "max_step": 30000,
-      "val_step": 500,
-      "save_path": "SyntheticImages/Binary/qsar-biodeg/IGTD"
-    },"REFINED": {
-      "problem": "supervised",
-      "normalize": false,
-      "save_path": "SyntheticImages/Binary/qsar-biodeg/REFINED"
-    },
-    "BarGraph": {
-      "problem": "supervised",
-      "normalize": false,
-      "save_path": "SyntheticImages/Binary/qsar-biodeg/BarGraph"
-    },
-    "DistanceMatrix": {
-      "problem": "supervised",
-      "normalize": false,
-      "save_path": "SyntheticImages/Binary/qsar-biodeg/DistanceMatrix"
-    },
-    "Combination": {
-      "problem": "supervised",
-      "normalize": false,
-      "save_path": "SyntheticImages/Binary/qsar-biodeg/Combination"
-    },
-    "SuperTML": {
-      "problem": "supervised",
-      "normalize": false,
-      "save_path": "SyntheticImages/Binary/qsar-biodeg/SuperTML",
-      "font_size": 10
-    },
-    "FeatureWrap": {
-      "problem": "supervised",
-      "normalize": false,
-      "save_path": "SyntheticImages/Binary/qsar-biodeg/FeatureWrap",
-      "size": [8,8]
-    },
-    "BIE": {
-      "problem": "supervised",
-      "normalize": false,
-      "save_path": "SyntheticImages/Binary/qsar-biodeg/BIE",
-      "precision": 64
-    }
-  }
+  "categorical_cols": [
+  ],
+  "numerical_cols": ["V1", "V2", "V3", "V4", "V5", "V6", "V7", "V8", "V9", "V10", "V11", "V12", "V13", "V14", "V15", "V16", "V17", "V18", "V19", "V20", "V21", "V22", "V23", "V24", "V25", "V26", "V27", "V28", "V29", "V30", "V31", "V32", "V33", "V34", "V35", "V36", "V37", "V38", "V39", "V40", "V41"
+  ],
+  "encoding": {
+    "categorical_features": "onehot",
+    "numerical_features": "minmax",
+    "target": "label"
+  },
+  "batch_size": 32,
+  "epochs": 100
 }
